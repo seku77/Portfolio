@@ -1,0 +1,409 @@
+/* Global objects */
+
+/* Left padding reset */
+
+.noPaddingColumn{
+    padding-left: 0px;
+}
+
+/* Font */
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Buttons*/
+.customButton{
+    color: #FFFFFF;
+    background-color: #F92524;
+    border-radius: 3px;
+    padding: 7px 10px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.customButton:hover{
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.dividedButton{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #F92524;
+    border-radius: 3px;
+}
+
+.dividedButton .customButton{
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+}
+
+.dividedButton .arrowBox{
+    -webkit-box-flex: 0.5;
+    -ms-flex-positive: 0.5;
+    flex-grow: 0.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* Images */
+.image{
+    width: 100%;
+    height: auto;
+}
+
+/* Separator line*/
+.separatorLineRed{
+    width: 70px;
+    border-bottom: 4px solid #F92524;
+    margin: 20px 0px;
+}
+
+.separatorLineWhite{
+    width: 70px;
+    border-bottom: 4px solid #FFFFFF;
+    margin-bottom: 35px;
+}
+
+/* First container - navigationBar*/
+.logo{
+    position: relative;
+}
+
+.logo:before{
+    position: absolute;
+    content: url(../img/background/eclipseGreyBig.svg);
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    top: -400px;
+    left: -400px;
+}
+
+.underlinedButton{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.underlinedButton:hover{
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid #F92524;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #000000;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #000000;
+}
+
+/*Second container - text + image */
+
+/*Text column*/
+.textBox{
+    margin-top: 20vh;
+    margin-bottom: 70px;
+}
+
+/*Image column*/
+.firstImage{
+    margin: 30% 30% 30% 30%;
+    position: relative;
+}
+
+.firstImage:before{
+    content: ' ';
+    background-image: url(../img/background/dots.svg);
+    background-size: 424px 424px;
+    z-index: -2;
+    width: 290px; 
+    height: 290px;
+    position: absolute;
+    right: 29%;
+    top: 35%;
+}
+
+.firstImage:after{
+    content: ' ';
+    background-image: url(../img/background/EclipseGreyMed.svg);
+    z-index: -1;
+    position: absolute;
+    background-size: 424px 424px;
+    width: 450px; 
+    height: 390px;
+    top: -220px;
+    right: -315px;
+}
+
+/*Third container - article + image*/
+
+/* Image column */
+.secondImage{
+    padding: 250px 0px 0px 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    position: relative;
+}
+
+.secondImage:before{
+    content: url(../img/background/redShape1.svg);
+    position: absolute;
+    z-index: -1;
+    top: -200px;
+    left: -450px;
+}
+
+.secondImage:after{
+    content: ' ';
+    background-image: url(../img/background/dots.svg);
+    position: absolute;
+    background-size: 424px 424px;
+    z-index: -2;
+    width: 290px; 
+    height: 290px;
+    right: -10%;
+    top: 32%;
+}
+
+
+/* Article column */
+/* Icons column */
+
+.iconContainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.iconCircle{
+    border: 3px solid #F92524;
+    height: 106px;
+    width: 106px;
+    margin: 10px 0px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* Text column*/
+.articleBox{
+    padding-top: 150px;
+}
+
+/* Fourth container - projects */
+.separator{
+    margin-top: 300px;
+    position: relative;
+}
+
+.separator:after{
+    content: url(../img/background/greyShape1.svg);
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: -250px;
+}
+
+.navigationBottom ul{
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.navigationBottom ul li{
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigationBottomText ul li{
+    border: 3px solid #F92524;
+}
+
+.projects{
+    margin: 0px 0px 50px 0px;
+    box-shadow:0px 8px 12px 1px rgba(0,0,0, 0.49);
+	-moz-box-shadow:0px 8px 12px 1px rgba(0,0,0, 0.49);
+    -webkit-box-shadow:0px 8px 12px 1px rgba(0,0,0, 0.49);
+}
+
+.projects a {
+	max-width: 33.3333333333333333333%;
+	float: left;
+	overflow: hidden;
+}
+.projects img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	display: block;
+	-webkit-transition: -webkit-transform .35s ease;
+	-moz-transition: -moz-transform .35s ease;
+	-o-transition: -o-transform .35s ease;
+	-ms-transition: -ms-transform .35s ease;
+	transition: transform .35s ease;
+}
+
+.projects a:hover img {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.clear {
+    clear: both;
+}
+
+/* Fifth container - footer*/
+/* Contact description */
+footer:before{
+    content: url(../img/background/footerBg.svg);
+    position: absolute;
+    bottom: -370px;
+    right: 0px;
+    z-index: -1;
+}
+
+footer{
+    color: #FFFFFF;
+    position: relative;
+}
+
+footer a{
+    color: #FFFFFF;
+}
+
+footer a:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contact{
+    padding-top: 150px;
+}
+
+.contactDescription{
+    color: #FFFFFF;
+    position: relative;
+    margin: 15px 0px 35px 0px;
+}
+
+.icon{
+    margin-right: 28px;
+}
+
+.contactData{
+    padding-top: 25%;
+}
+
+.cellPhone:before{
+    content: url(../img/icons/phone-fill.svg);
+}
+
+.eMail:before{
+    content: url(../img/icons/email.svg);
+}
+
+@media(min-width: 375px){
+    
+    .firstImage:after{
+        background-size: 324px 324px;
+        background-repeat: no-repeat;
+        width: 310px;
+        right: -115px;
+        top: -125px;
+    }
+    
+    .secondImage{
+        padding: 250px 0px 0px 0px;
+        margin-top: 200px;
+    }
+    
+    .secondImage:after{
+        right: 0px;
+    }
+    
+    .articleBox{
+        padding-top: 300px;
+    }
+    
+    footer:before{
+        bottom: 0px;
+        right: 0px;
+    }
+    
+    .contact{
+        padding-top: 100px;
+    }
+    
+    .contactData{
+        padding: 30px 0px 0px 0px;
+    }
+}
+
+@media(min-width: 768px){
+    .separator{
+        margin: 300px 0px 250px 0px;
+    }
+    
+    .firstImage:after{
+        right: -246px;
+    }
+    
+    .secondImage:after{
+        left: 62%;
+        top: 180px;
+    }
+    
+    .contact{
+        padding-top: 0px;
+    }
+    
+    .iconsBar{
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 1200px){
+    
+    footer:before{
+        bottom: -276px;
+    }
+    
+    .hideButton{
+        display: none;
+    }
+    
+    .secondImage:after {
+    left: 270px;
+    top: 180px;
+}
+}
