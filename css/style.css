@@ -318,10 +318,6 @@ footer a:hover{
     margin-right: 28px;
 }
 
-.contactData{
-    padding-top: 25%;
-}
-
 .cellPhone:before{
     content: url(../img/icons/phone-fill.svg);
 }
@@ -360,10 +356,6 @@ footer a:hover{
     
     .contact{
         padding-top: 100px;
-    }
-    
-    .contactData{
-        padding: 30px 0px 0px 0px;
     }
 }
 
